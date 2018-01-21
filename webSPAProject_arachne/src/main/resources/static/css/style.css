@@ -33,17 +33,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     }
     .table > thead > tr > th {
       text-align: center;
-       color: black
+      
+       
     }
     .table-hover > tbody > tr:hover {
       background-color: #e6ecff;
     }
     .table > tbody > tr > td {
       text-align: center;
+      background-color: white;
       
     }
     .table > tbody > tr > #title {
-      text-align: left;
+      text-align: center;
     }
      
     div > #paging {
@@ -936,6 +938,14 @@ P {
 	background-size:cover;
 	padding: 5em 0;
 }
+
+.subscribe div table {
+	
+} 
+
+
+
+
 .subscribe p {
     width: 72%;
     margin: 4em auto 0;

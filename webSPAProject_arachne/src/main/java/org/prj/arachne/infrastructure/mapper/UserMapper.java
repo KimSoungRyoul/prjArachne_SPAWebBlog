@@ -1,8 +1,7 @@
 package org.prj.arachne.infrastructure.mapper;
 
-import java.util.List;
-
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.exceptions.PersistenceException;
 import org.prj.arachne.domain.User;
 
 
@@ -10,6 +9,9 @@ import org.prj.arachne.domain.User;
 @Mapper
 public interface UserMapper {
 
-	public List<User> selectList(String id);
+	public void insert(User user)throws PersistenceException;
+	
+	public User selectOne(String id) throws PersistenceException;
+	
 	
 }

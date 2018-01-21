@@ -9,3 +9,8 @@ spring:
   mvc:
      favicon:
       enabled: true
+      
+  datasource:
+    url: jdbc:mysql://localhost:3306/arachne_db?useSSL=false
+    username: ksr_arachne_dev
+    password: arachne_password

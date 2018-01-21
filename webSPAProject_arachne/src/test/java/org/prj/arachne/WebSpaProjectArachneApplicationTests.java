@@ -1,4 +1,4 @@
-package org.pre;
+package org.prj.arachne;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
