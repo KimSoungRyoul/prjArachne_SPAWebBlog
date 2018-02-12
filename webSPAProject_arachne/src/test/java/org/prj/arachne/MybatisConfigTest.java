@@ -25,7 +25,7 @@ public class MybatisConfigTest {
 	@Test
 	public void testUserMapper() {
 		
-		User userInput=new User("sky5367", "1234");
+		User userInput=new User("sky5367", "1234","김성렬");
 		
 		userMapper.insert(userInput);
 		

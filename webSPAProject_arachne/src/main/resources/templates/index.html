@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
 
-<title>Arachne Project</title>
+<title>아라크네 프로젝트</title>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
@@ -110,13 +110,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											Pages</span><span class="caret"></span></a>
 									<ul class="dropdown-menu">
 										<li><a href="http://kimsoungryoul.tistory.com"
-											target="_blank">Tistory</a></li>
+											target="_blank">Tistory(KSR)</a></li>
 										<li><a href="https://github.com/KimSoungRyoul"
-											target="_blank">GitHub</a></li>
+											target="_blank">GitHub(KSR)</a></li>
 										<li><a href="/icons">Web Icons</a></li>
 										<li><a href="/codes">Short Codes</a></li>
+									</ul>
+									</li>
+									
+									<li><a href="#" class="dropdown-toggle"
+									data-toggle="dropdown" role="button" aria-haspopup="true"
+									aria-expanded="false">
+									<span data-letters="Pages">Api Document</span><span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="http://kimsoungryoul.tistory.com"
+											target="_blank">ResourceServer Api</a></li>
+										<li><a href="https://github.com/KimSoungRyoul"
+											target="_blank">AuthServer Api</a></li>
+										<li><a href="/icons">Recommendtation Api</a></li>
 									</ul></li>
-								<li><a href="/contact">없음</a></li>
+								<!-- <li><a href="/contact">없음</a></li> -->
 							</ul>
 						</div>
 						<!-- /.navbar-collapse -->
@@ -158,9 +171,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<ul class="rslides" id="slider3">
 								<li>
 									<div class="slider-info">
-										<h3>REST APIServer</h3>
+										<h3>스마트 미러 </h3>
 										<p>
-											Arachne Project 의 비지니스 도메인 관련 API 지원 <br></br> 회원관리,길찾기 등등
+											Embedded Prjoect<br></br>
+											Arachne Project 의 핵심 클라이언트 모듈
+											 <br></br> 의상추전,일정관리 등등을 보여준다
+										</p>
+										<div class="more-button">
+											<a href="#" data-toggle="modal" data-target="#myModal1">Read
+												More</a>
+										</div>
+									</div>
+								</li>
+								
+								<li>
+									<div class="slider-info">
+										<h3>
+											Api 서버
+										</h3>
+										<p>
+											프로젝트 내 비지니스 관련 Api를 이곳에서 통합한다  <br></br> 회원 관리 , 컨텐츠 ,스트리밍 ,푸쉬, 캘린더 관리 등등 
 										</p>
 										<div class="more-button">
 											<a href="#" data-toggle="modal" data-target="#myModal2">Read
@@ -168,41 +198,45 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</div>
 									</div>
 								</li>
+								
 								<li>
 									<div class="slider-info">
 										<h3>
-											Authentication<br></br> Server
+											인증 서버
 										</h3>
 										<p>
-											토큰 방식 인증서버 , facebook, google을 연동하여 <br></br> 서버인가방식 으로 인증가능
+											토큰 방식 자체 구현된 인증서버  facebook, google으로도 인증 가능  <br></br> OAuth2.0 보안에 대한 개념 학습 목적
 										</p>
 										<div class="more-button">
-											<a href="#" data-toggle="modal" data-target="#myModal">Read
+											<a href="#" data-toggle="modal" data-target="#myModal3">Read
 												More</a>
 										</div>
 									</div>
 								</li>
 								<li>
 									<div class="slider-info">
-										<h3>AndroidApp</h3>
+										<h3>거울 관리 어플 </h3>
 										<p>
-											Android 어플 , 서버 활용하는 End-User RxProgramming,MVP패턴 학습목적 <br></br>ToyProject
+											Android Aplication <br></br>
+											자체구현된 서버를 활용하는 End-User RxProgramming,MVP패턴 학습목적 <br></br>
+											ToyProject
 										</p>
 										<div class="more-button">
-											<a href="#" data-toggle="modal" data-target="#myModal">Read
+											<a href="#" data-toggle="modal" data-target="#myModal4">Read
 												More</a>
 										</div>
 									</div>
 								</li>
 								<li>
 									<div class="slider-info">
-										<h3>WebSPAProject</h3>
+										<h3>WebIntroProject</h3>
 										<p>
-											프로젝트 결과물을 보여주기위한<br></br> 단순 웹 프로젝트 현재 이 웹사이트가<br></br> 그 결과물
-											(tistory파싱 , 웹퍼블리싱 등등)
+											프로젝트 결과물을 보여주기위한<br></br>
+											 단순 웹 프로젝트 현재 이 웹사이트가<br></br>
+											  그 결과물 (tistory파싱 , 웹퍼블리싱 등등)
 										</p>
 										<div class="more-button">
-											<a href="#" data-toggle="modal" data-target="#myModal">Read
+											<a href="#" data-toggle="modal" data-target="#myModal5">Read
 												More</a>
 										</div>
 									</div>
@@ -217,7 +251,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!-- //w3-banner -->
 	<!-- modal -->
-	<div class="modal about-modal fade" id="myModal" tabindex="-1"
+	<div class="modal about-modal fade" id="myModal1" tabindex="-1"
 		role="dialog">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -226,19 +260,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
-					<h4 class="modal-title">Stock Industry</h4>
+					<h4 class="modal-title">스마트 미러 </h4>
 				</div>
 				<div class="modal-body">
 					<div class="agileits-w3layouts-info">
-						<img src="images/g2.jpg" alt="" />
-						<p>Duis venenatis, turpis eu bibendum porttitor, sapien quam
-							ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque
-							ac fermentum diam. Integer eu facilisis nunc, a iaculis felis.
-							Pellentesque pellentesque tempor enim, in dapibus turpis
-							porttitor quis. Suspendisse ultrices hendrerit massa. Nam id
-							metus id tellus ultrices ullamcorper. Cras tempor massa luctus,
-							varius lacus sit amet, blandit lorem. Duis auctor in tortor sed
-							tristique. Proin sed finibus sem.</p>
+						<img src="images/smartMirrorImg.PNG" alt="" />
+						<p>기술 스택 :  Raspberry Pi <br></br>
+							OS : Android Things <br></br>
+							안드로이드 임베디드 운영체제를 사용함으로서 
+							프로젝트 내 클라이언트 모듈을 서로 재활용할수 있고 
+							팀원들간 협업이 통일된 기술사용으로 유연해지는 효과를 얻을수있다.
+							스마트 거울에서 보여지는 시간, 달력 ,날씨 를 비롯한 여러 정보들을 기본적으로 제공하며
+							프로젝트 내 머신러닝(with TensorFlow) 기술이 적용된 의상 추천 알고리즘을  
+							 거울을 통해 그 서비스를 제공한다.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -254,25 +289,129 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
-					<h4 class="modal-title">Stock Industry2</h4>
+					<h4 class="modal-title">Api 서버 </h4>
 				</div>
 				<div class="modal-body">
 					<div class="agileits-w3layouts-info">
 						<img src="images/g2.jpg" alt="" />
-						<p>Duis venenatis, turpis eu bibendum porttitor, sapien quam
-							ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque
-							ac fermentum diam. Integer eu facilisis nunc, a iaculis felis.
-							Pellentesque pellentesque tempor enim, in dapibus turpis
-							porttitor quis. Suspendisse ultrices hendrerit massa. Nam id
-							metus id tellus ultrices ullamcorper. Cras tempor massa luctus,
-							varius lacus sit amet, blandit lorem. Duis auctor in tortor sed
-							tristique. Proin sed finibus sem.</p>
+						<p>
+							기반 인프라 : AWS Linux Ubuntu16<br></br>
+							사용 기술 : SpringFramework 4.3.1, springboot, Jpa, MariaDB  (상세 기술스택은 깃허브 기술) <br></br> 
+							python3, tensorFlow (의상추천 알고리즘)
+							기타  : DDD(domain driven develop) 
+							아라크네 프로젝트 내부에서 필요한 데이터는 이 Api Server를 통해 관리된다.
+							GCM을 통한 푸쉬, 컨텐츠 up(down)load ,streaming 방식 지원 
+							회원 정보 관리 , 캘린더 , 스마트 거울 개인 설정값,   						
+												
+						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- //modal -->
+	
+	<div class="modal about-modal fade" id="myModal3" tabindex="-1"
+		role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">인증 서버(Auth Server) </h4>
+				</div>
+				<div class="modal-body">
+					<div class="agileits-w3layouts-info">
+						<img src="images/g2.jpg" alt="" />
+						<p>
+							기반 인프라 : AWS Linux Ubuntu16(Api 서버와 동일 물리적으로 같은 운영환경)<br></br>
+							사용 기술 : SpringFw OAuth2.0, Redis(token Storage)   (Api 서버와 비슷 추가적인 부분만 기술) <br></br>  
+							아라크네 프로젝트 인증 시스템을 관리  토큰 발급 ,만료    						
+												
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
+	
+	
+	
+	<div class="modal about-modal fade" id="myModal4" tabindex="-1"
+		role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">Android Application </h4>
+				</div>
+				<div class="modal-body">
+					<div class="agileits-w3layouts-info">
+						<img src="images/g2.jpg" alt="" />
+						<p>
+							학습 목표 기술 : RxJava MVP Pattern
+							
+							스마트 거울을 컨트롤 할수있는 안드로이드 어플리케이션<br></br> 
+							 RxJava 학습 하고 Retrofit2 를 사용한 모듈을 임베디드 프로젝트와
+							 같이 사용(재활용) 
+							
+							<br></br>					
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="modal about-modal fade" id="myModal5" tabindex="-1"
+		role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h4 class="modal-title">Arachne Web Page    </h4>
+				</div>
+				<div class="modal-body">
+					<div class="agileits-w3layouts-info">
+						<img src="images/g2.jpg" alt="" />
+						<p>
+							기술 : Mybatis , themeleaf 
+							
+							노말한 웹 프로젝트 Arachne Project 특성상 Mybatis를 쓰기에는 시간이 부족하다<br></br> 
+							 그래도 국내 SW 업계 특성상 Mybatis는 빼놓을수 없는 기술 스펙이므로 포트폴리오 내에서 <br></br>
+							 빼놓기는 그렇다 그래서 기본적인 게시판 (CRUD)+ 게시물 검색 기능을 추가한다<br></br> 
+							 초반에는 SPA를 기획했으나 만들다 보니 전통적인 웹프로젝트가 되어버렸다  
+							 뭐 이것도 나쁘지는 않으나 초반 기획 목적은  Angular4를 공부하기위한 HelloProject였으므로<br></br> 
+							프로젝트 마무리전 Angular4를 공부했으면 좋겠다.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
+	
+	
+	
+	
+	
 	<!-- services -->
 	<div class="services">
 		<div class="container">
@@ -285,11 +424,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="agileits-services-info">
 							<h4>
-								핸드프리 <br></br>길찾기 서비스
+								Smart Mirror <br></br>거울과 Smart폰의 융합
 							</h4>
 							<p>
-								블루투스 통신을 사용하여<br></br> 손에 스마트폰을 들지 않고도 <br></br> 길을 찾아 갈수 있도록
-								서비스 제공
+								거울과 소통하여 <br></br> 손에 스마트폰을 들지 않고도 <br></br> 가정내 사물들을 제어
+
 							</p>
 						</div>
 					</div>
@@ -300,9 +439,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<i class="fa fa-heart-o" aria-hidden="true"></i>
 						</div>
 						<div class="agileits-services-info">
-							<h4>지하철 버스 알람서비스</h4>
+							<h4>지하철 버스 와 같은 주요 정보를 제공</h4>
 							<p>
-								사용자 위치 데이터를 쌓아서 <br></br> 반복되는 경로 패턴 내에 있는 대중교통 시간표를 푸쉬알림
+								바쁜 아침 거울 앞에서  <br></br> 가장 필요로하는 정보를 얻는다
 							</p>
 						</div>
 					</div>
@@ -313,8 +452,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<i class="fa fa-clone" aria-hidden="true"></i>
 						</div>
 						<div class="agileits-services-info">
-							<h4>사용자 위치기반 마케팅</h4>
-							<p>사용자 위치와 시간 기록 들을 분석하여 그 데이터를 기반으로 사용자에게 필요한 마케팅 광고를 제공한다</p>
+							<h4>의상 추천 알고리즘</h4>
+							<p>당일 날씨와 사용자의 옷을 읽어서 사용자에게 최적의 코디를 제공</p>
 						</div>
 					</div>
 				</div>
@@ -324,10 +463,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
 						</div>
 						<div class="agileits-services-info">
-							<h4>통계 자료 기반 OpenAPI 제공</h4>
+							<h4>일정 관리 스마트폰 동기화 </h4>
 							<p>
-								축적한 데이터 기반으로 상업적 Info 제공 <br></br> ex) 현재 자신의 가게 주변 어플 사용자 에게
-								할인쿠폰을 뿌린다.
+								거울 위에서 스마트폰 캘린더를 동기화  <br></br> 
+								자신의 일정을 관리 받고 포스트 잇을 붙이듯 거울 간단한 메모를 할수 있는 편의성을 제공
 							</p>
 						</div>
 					</div>
