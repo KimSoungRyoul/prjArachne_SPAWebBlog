@@ -5,9 +5,7 @@ import javax.sql.DataSource;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.type.BooleanTypeHandler;
 import org.apache.ibatis.type.DateTypeHandler;
-import org.apache.ibatis.type.EnumOrdinalTypeHandler;
 import org.apache.ibatis.type.TypeHandler;
-import org.apache.ibatis.type.TypeHandlerRegistry;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.mybatis.spring.annotation.MapperScan;
@@ -35,6 +33,8 @@ public class MybatisConfiguration {
 				new DateTypeHandler(),
 				new BooleanTypeHandler()
 		});
+		
+		
 	
 		return sessionFactory.getObject();
 	}
