@@ -1,17 +1,50 @@
+
+
+spring:
+  profiles:
+    active:
+    - dev
+
+---
 server:
-  port: 8080
+  port: 80
  
 
 spring:
   thymeleaf:
-    cache: false
+    cache: true
+  profiles: product
     
   mvc:
      favicon:
       enabled: true
       
   datasource:
+    url: jdbc:mysql://arachnedatabase.cpmqq8pzapbm.ap-northeast-2.rds.amazonaws.com:3306/arachne_db?useSSL=false
+    username: sky5367
+    password: rlatjduf510
+        
+---
+server:
+  port: 8080
+
+
+spring:
+  profiles: dev
+  
+  thymeleaf:
+    cache: false  
+  
+  datasource:
     url: jdbc:mysql://localhost:3306/arachne_db?useSSL=false
     username: ksr_arachne_dev
-    password: arachne_password
-        
+    password: arachne_password 
+    
+    
+    
+    
+    
+    
+    
+    
+    
