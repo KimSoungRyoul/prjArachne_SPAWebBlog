@@ -533,49 +533,47 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- welcome -->
 	<div class="welcome">
 		<div class="container">
-			<h3 class="agileits-title">티스토리 프로젝트 Arachne부분 파싱하기</h3>
+			<h3 class="agileits-title">Arachne 프로젝트 관련 칼럼 </h3>
 			<div class="welcomerow-agileinfo">
-				<h5>Blanditiis praesentium deleniti atque corrupti quos
-					corrupti quos dolores</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					Vivamus mattis pharetra turpis, a scelerisque enim venenatis
-					luctus. Cras blandit dolor a facilisis tincidunt. Vivamus sed orci
-					aliquam, aliquet tellus ut, ornare nunc. Praesent lacinia elit id
-					libero pulvinar, sit amet faucibus felis ornare. Pellentesque nulla
-					lorem, pretium vel bibendum in, elementum id urna. Sed interdum
-					interdum accumsan. Aenean nec purus ac orci finibus facilisis. In
-					sit amet placerat nisl, in auctor sapien.</p>
+				<h5>프로젝트 개발일지, 개인 블로그 칼럼.... 그리고 프로젝트 후기     </h5>
+				<p> 팀 프로젝트를 진행하면 매번 느끼는거지만 <strong>코딩은 정말 일부분이고</strong> 프로젝트에서 가장 힘든 내용들은 <strong>협업을 위한 의사소통비용과
+				</strong>프로젝트 와 관 련문서작업들 그리고 설계가  큰 비중을 차지한다.  이번 프로젝트를 진행하면서 얻고자했던 것은
+					기존에 사용하던 스프링프로젝트(특정기술)에 모든 것을 의존하던	단점을 벗어던지기위해 새로운 언어, 기술, 프레임워크를 사용하려고 노력했다.
+					물론 ServerSide의 여러모듈은 스프링프로젝트로 진행하였으나 <strong>파이썬 머신러닝,Django, NodeJs 새로운기술스텍</strong>이 적용되었다는 점
+					그리고 Only RDB에 의존하는 것에서 탈피하고 NOSQL Database들에 대한 학습 이있었다 는측면에서 이번 프로젝트의 성과에 만족한다.
+					-김성렬-
+				</p>
 			</div>
 			<div class="w3-welcome-grids">
 				<div class="col-md-3 col-xs-6 w3l-welcome-grid">
 					<img src="images/g1.jpg" alt=" " class="img-responsive" />
 					<div class="agileits-welcome-info">
-						<h4>Vaesent purus</h4>
-						<p>Donec non nibh in dui sagittis finibus. Duis suscipit arcu
+						<h4 th:text="${boardList[0].title}">Vaesent purus</h4>
+						<p th:text="${boardList[0].contentsSub}">Donec non nibh in dui sagittis finibus. Duis suscipit arcu
 							vel rhoncus molestie eget placerat mauris.</p>
 					</div>
 				</div>
 				<div class="col-md-3 col-xs-6 w3l-welcome-grid">
 					<img src="images/g2.jpg" alt=" " class="img-responsive" />
 					<div class="agileits-welcome-info">
-						<h4>Suscipit duis</h4>
-						<p>Nibh in dui sagittis donec non finibus. Duis suscipit arcu
+						<h4 th:text="${boardList[1].title}">Suscipit duis</h4>
+						<p th:text="${boardList[1].contentsSub}">Nibh in dui sagittis donec non finibus. Duis suscipit arcu
 							vel rhoncus molestie eget placerat mauris.</p>
 					</div>
 				</div>
 				<div class="col-md-3 col-xs-6 w3l-welcome-grid">
 					<img src="images/g3.jpg" alt=" " class="img-responsive" />
 					<div class="agileits-welcome-info">
-						<h4>Tempor purus</h4>
-						<p>Sagittis donec non nibh in dui finibus. Duis suscipit arcu
+						<h4 th:text="${boardList[2].title}">Tempor purus</h4>
+						<p th:text="${boardList[2].contentsSub}">Sagittis donec non nibh in dui finibus. Duis suscipit arcu
 							vel rhoncus molestie eget placerat mauris.</p>
 					</div>
 				</div>
 				<div class="col-md-3 col-xs-6 w3l-welcome-grid">
 					<img src="images/g4.jpg" alt=" " class="img-responsive" />
 					<div class="agileits-welcome-info">
-						<h4>Praesent tempor</h4>
-						<p>Arcu vel donec non nibh in dui sagittis finibus. Duis
+						<h4 th:text="${boardList[3].title}">Praesent tempor</h4>
+						<p th:text="${boardList[3].contentsSub}">Arcu vel donec non nibh in dui sagittis finibus. Duis
 							suscipit rhoncus molestie eget placerat mauris.</p>
 					</div>
 				</div>

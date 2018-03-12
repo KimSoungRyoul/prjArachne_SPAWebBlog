@@ -1,15 +1,29 @@
 package org.prj.arachne.presentation.web;
 
+import org.prj.arachne.domain.tistory.TistoryCategory;
+import org.prj.arachne.util.TistoryParserUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class WebController {
 
+	@Autowired
+	private TistoryParserUtil tistoryParserUtil;
+
+
 	@GetMapping("/")
-	public String index() {
-		
-		return "index";
+	public ModelAndView index() {
+		ModelAndView modelAndView=new ModelAndView("index");
+		modelAndView.addObject("boardList",tistoryParserUtil.parsingPostList(TistoryCategory.DEVDIARY));
+
+
+
+
+
+		return modelAndView;
 	}
 	
 	
