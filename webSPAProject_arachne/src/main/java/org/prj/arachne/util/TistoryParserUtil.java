@@ -4,7 +4,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import org.prj.arachne.domain.TistoryBoard;
+import org.prj.arachne.domain.tistory.TistoryBoard;
 import org.prj.arachne.domain.tistory.TistoryCategory;
 import org.springframework.stereotype.Component;
 
@@ -24,7 +24,7 @@ public class TistoryParserUtil {
         List<TistoryBoard> boards=new LinkedList<>();
 
         try {
-            Document doc= getHtmlDocument(TistoryCategory.BUSSINESSCLUB);
+            Document doc= getHtmlDocument(category);
 
 
 
